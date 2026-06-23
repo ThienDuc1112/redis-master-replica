@@ -98,7 +98,7 @@ Application ------------------------+
 
 ```bash
 git clone https://github.com/ThienDuc1112/redis-master-replica.git
-cd leaderboard-service
+cd leaderboard
 ```
 
 ## 2. Khởi động Redis
