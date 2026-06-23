@@ -97,7 +97,7 @@ Application ------------------------+
 ## 1. Clone project
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/ThienDuc1112/redis-master-replica.git
 cd leaderboard-service
 ```
 
