@@ -1,0 +1,15 @@
+spring:
+  redis:
+    master:
+      host: localhost
+      port: 6379
+      password: masterpass
+    replica:
+      host: localhost
+      port: 6380
+      password: replicapass
+    lettuce:
+      pool:
+        max-active: 8
+        max-idle: 8
+        min-idle: 0

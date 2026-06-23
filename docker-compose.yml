@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  redis-master:
+    image: redis:7-alpine
+    container_name: redis-master
+    ports:
+      - "6379:6379"
+    command: redis-server --appendonly yes --requirepass masterpass
+    networks:
+      - redis-network
+
+  redis-replica:
+    image: redis:7-alpine
+    container_name: redis-replica
+    ports:
+      - "6380:6379"
+    command: redis-server --slaveof redis-master 6379 --masterauth masterpass --requirepass replicapass
+    depends_on:
+      - redis-master
+    networks:
+      - redis-network
+
+networks:
+  redis-network:
+    driver: bridge
