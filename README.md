@@ -13,7 +13,6 @@ Dịch vụ bảng xếp hạng game được xây dựng bằng Spring Boot và
 * [Cấu Hình](#️-cấu-hình)
 * [Testing](#-testing)
 * [Redis Commands](#-redis-commands)
-* [Lưu Ý](#-lưu-ý)
 
 ---
 
